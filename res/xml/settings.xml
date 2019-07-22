@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ape.materialpreference.PreferenceCategory android:title="@string/settings_happen_category" android:key="trigger_method">
+        <com.ape.materialpreference.SwitchPreference android:title="@string/swipe_from_top_left_title" android:key="swipe_from_top_left" android:summary="@string/swipe_from_top_left" android:defaultValue="true" />
+        <com.ape.materialpreference.SwitchPreference android:title="@string/use_atouch" android:key="use_atouch" android:summary="@string/use_atouch_summary" android:defaultValue="false" />
+    </com.ape.materialpreference.PreferenceCategory>
+    <com.ape.materialpreference.PreferenceCategory android:title="@string/settings_service">
+        <com.ape.materialpreference.SwitchPreference android:title="@string/service_foreground" android:key="service_foreground" android:summary="@string/service_foreground_summary" android:defaultValue="true" />
+    </com.ape.materialpreference.PreferenceCategory>
+    <com.ape.materialpreference.PreferenceCategory android:title="@string/getsure_about_menu">
+        <com.ape.materialpreference.Preference android:title="@string/settings_version_title" android:key="version" />
+    </com.ape.materialpreference.PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gesture="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_ll" android:background="?android:listChoiceBackgroundIndicator" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/gestureAppIcon" android:layout_width="@dimen/notification_app_icon_size" android:layout_height="@dimen/notification_app_icon_size" android:layout_centerVertical="true" android:contentDescription="@null" android:paddingStart="16.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/list_item_height" android:layout_weight="1.0">
+            <com.ape.gesture.view.GestureOverlayView android:id="@id/gestureImageView" android:visibility="invisible" android:layout_width="@dimen/gesture_image_size_small" android:layout_height="@dimen/gesture_image_size_small" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" gesture:cardCornerRadius="4.0dip" gesture:cardElevation="0.0dip" gesture:cardMaxElevation="0.0dip" gesture:contentPadding="5.0dip" gesture:gestureStrokeWidth="3.0" gesture:gestureColor="@android:color/white" />
+            <ImageView android:id="@id/gestureImage" android:background="@drawable/gesture_list_bk" android:padding="5.0dip" android:visibility="visible" android:layout_width="@dimen/gesture_image_size_small" android:layout_height="@dimen/gesture_image_size_small" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:ellipsize="end" android:gravity="start|center" android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_centerInParent="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/gestureImageView" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Switch android:layout_gravity="end|center" android:id="@id/gesture_switch" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

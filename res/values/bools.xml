@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="support_promixy_answer_phone_enabled">true</bool>
+    <bool name="support_promixy_dial_phone_enabled">true</bool>
+    <bool name="support_promixy_incoming_call_enabled">true</bool>
+    <bool name="support_promixy_powerkey_unlock_enabled">true</bool>
+    <bool name="support_toggle_promixy_doubleclick_lockscreen">true</bool>
+    <bool name="support_toggle_promixy_doubleclick_turnonscreen">true</bool>
+    <bool name="support_upset_silent_enabled">true</bool>
+    <bool name="support_upset_snooze_enabled">true</bool>
+    <bool name="support_upset_speaker_enabled">true</bool>
+</resources>

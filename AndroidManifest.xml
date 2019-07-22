@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="com.ape.smartgesture" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application android:excludeFromRecents="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.ape.gesture.App" android:persistent="true" android:resizeableActivity="false" android:supportsRtl="true" android:taskAffinity="" android:theme="@style/Theme.Gesture">
+        <activity android:label="@string/app_name" android:name="com.ape.gesture.activity.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ape.gesturephone.GesturePhoneService"/>
+        <receiver android:name="com.ape.gesturephone.GesturePhoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ape.gesturephone.GesturePhoneAlarmSnoozeReceiver">
+            <intent-filter>
+                <action android:name="com.android.deskclock.ALARM_ALERT"/>
+                <action android:name="com.android.deskclock.ALARM_DONE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:label="@string/optiontitle" android:name="com.ape.gesture.activity.AddTaskActivity" android:screenOrientation="portrait" android:taskAffinity="com.ape.gesture"/>
+        <activity android:label="@string/selectapptitle" android:name="com.ape.gesture.activity.SelectAppActivity" android:screenOrientation="portrait" android:taskAffinity="com.ape.gesture"/>
+        <activity android:label="@string/gesturetitle" android:name="com.ape.gesture.activity.CreateGestureActivity" android:screenOrientation="portrait" android:taskAffinity="com.ape.gesture"/>
+        <activity android:label="@string/gesturetitle" android:name="com.ape.gesture.activity.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ape.gesture.activity.UnLockActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/select_contact" android:name="com.ape.selectcontact.RecipientsListActivity" android:taskAffinity="com.ape.gesture"/>
+        <activity android:label="@string/selectBookmarkTitle" android:name="com.ape.gesture.activity.SelectBookmarkActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:label="@string/smartaction" android:name="com.ape.action.smartaction.SmartActionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ape.smartgesture.intent.action.smartaction"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.ape.gesture.GestureService"/>
+        <receiver android:name="com.ape.gesture.GestureBootReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ape.upgrade.DownloadCompleteReveiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ape.action.smartawake.SmartAwakeReceiver">
+            <intent-filter>
+                <action android:name="com.ape.smartgesture.intent.action.SMART_AWAKE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.koma.actionprovider" android:exported="true" android:name="com.ape.action.gestureandaction.provider.ActionProvider"/>
+        <meta-data android:name="BUG_HD_SDK_GENERAL_KEY" android:value="ef829f733865a3e36078c91e2b9a4c62"/>
+        <meta-data android:name="api_token" android:value="b6bb01fe261cafbabf03e16a9bdf33ad"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_package_names">
+        <item>com.way.gesture</item>
+        <item>com.ape.myseneschal</item>
+    </string-array>
+    <string-array name="inlay_gesture_activity">
+        <item>com.android.dialer.DialtactsActivity</item>
+        <item>com.ape.music.MusicSplashActivity</item>
+        <item>com.myos.camera.activity.CameraActivity</item>
+    </string-array>
+    <array name="inlay_gesture_list_bg">
+        <item>@drawable/gesture_inlay_phone</item>
+        <item>@drawable/gesture_inlay_music</item>
+        <item>@drawable/gesture_inlay_camera</item>
+    </array>
+    <string-array name="inlay_gesture_pakage_names">
+        <item>com.android.dialer</item>
+        <item>com.ape.music</item>
+        <item>com.myos.camera</item>
+    </string-array>
+    <array name="letter_tile_colors">
+        <item>@color/letter_tile_red_color</item>
+        <item>@color/letter_tile_pink_color</item>
+        <item>@color/letter_tile_purple_color</item>
+        <item>@color/letter_tile_deep_purple_color</item>
+        <item>@color/letter_tile_indigo_color</item>
+        <item>@color/letter_tile_blue_color</item>
+        <item>@color/letter_tile_light_blue_color</item>
+        <item>@color/letter_tile_cyan_color</item>
+        <item>@color/letter_tile_teal_color</item>
+        <item>@color/letter_tile_green_color</item>
+        <item>@color/letter_tile_light_green_color</item>
+        <item>@color/letter_tile_orange_color</item>
+        <item>@color/letter_tile_deep_orange_color</item>
+        <item>@color/letter_tile_grey_color</item>
+    </array>
+    <array name="letter_tile_colors_dark">
+        <item>@color/letter_tile_red_color_dark</item>
+        <item>@color/letter_tile_pink_color_dark</item>
+        <item>@color/letter_tile_purple_color_dark</item>
+        <item>@color/letter_tile_deep_purple_color_dark</item>
+        <item>@color/letter_tile_indigo_color_dark</item>
+        <item>@color/letter_tile_blue_color_dark</item>
+        <item>@color/letter_tile_light_blue_color_dark</item>
+        <item>@color/letter_tile_cyan_color_dark</item>
+        <item>@color/letter_tile_teal_color_dark</item>
+        <item>@color/letter_tile_green_color_dark</item>
+        <item>@color/letter_tile_light_green_color_dark</item>
+        <item>@color/letter_tile_orange_color_dark</item>
+        <item>@color/letter_tile_deep_orange_color_dark</item>
+        <item>@color/letter_tile_grey_color_dark</item>
+    </array>
+</resources>

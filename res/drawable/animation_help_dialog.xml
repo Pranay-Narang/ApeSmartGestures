@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="400" android:drawable="@drawable/animation_help_dialog_1" />
+    <item android:duration="400" android:drawable="@drawable/animation_help_dialog_2" />
+    <item android:duration="400" android:drawable="@drawable/animation_help_dialog_3" />
+    <item android:duration="400" android:drawable="@drawable/animation_help_dialog_4" />
+    <item android:duration="1800" android:drawable="@drawable/animation_help_dialog_5" />
+</animation-list>

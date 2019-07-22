@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="400" android:drawable="@drawable/animation_doubleclick_turnonscreen_1" />
+    <item android:duration="200" android:drawable="@drawable/animation_doubleclick_turnonscreen_2" />
+    <item android:duration="200" android:drawable="@drawable/animation_doubleclick_turnonscreen_3" />
+    <item android:duration="200" android:drawable="@drawable/animation_doubleclick_turnonscreen_4" />
+    <item android:duration="200" android:drawable="@drawable/animation_doubleclick_turnonscreen_5" />
+    <item android:duration="2000" android:drawable="@drawable/animation_doubleclick_turnonscreen_6" />
+</animation-list>

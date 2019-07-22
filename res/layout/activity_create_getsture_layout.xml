@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/edit_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/ic_launcher" android:layout_marginStart="20.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/textview1" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="74.0dip" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:id="@id/gesture_create_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.ape.gesture.view.GestureOverlayView android:id="@id/gesture_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" fab:cardCornerRadius="8.0dip" fab:gestureColor="@android:color/white" fab:uncertainGestureColor="#48ffffff" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu_create" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.AppCompatButton android:textAppearance="?android:textAppearanceInverse" android:id="@id/menu_redo_item" android:background="@drawable/btn_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/gestureRedo" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatButton android:enabled="false" android:textAppearance="?android:textAppearanceInverse" android:id="@id/menu_ok_item" android:background="@drawable/btn_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/gestureOK" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.ape.fab.FloatingActionMenu android:id="@id/menu_edit" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:paddingEnd="45.0dip" android:layout_alignParentEnd="true" android:elevation="8.0dip" fab:menu_icon="@drawable/ic_edit" fab:menu_labels_singleLine="true" fab:menu_labels_ellipsize="end" fab:menu_colorNormal="@color/btn_pop_color" fab:menu_colorPressed="@color/btn_pop_color_pressed" fab:menu_openDirection="up" fab:menu_backgroundColor="#ccffffff">
+        <com.ape.fab.FloatingActionButton android:id="@id/menu_delete_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delete_white_24dp" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/gestureDelete" />
+        <com.ape.fab.FloatingActionButton android:id="@id/menu_edit_gesture_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_format_paint_white_24dp" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/gestureEditGesture" />
+        <com.ape.fab.FloatingActionButton android:id="@id/menu_edit_job_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/gestureEditJob" />
+    </com.ape.fab.FloatingActionMenu>
+</RelativeLayout>

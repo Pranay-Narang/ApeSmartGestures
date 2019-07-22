@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ape.materialpreference.PreferenceCategory android:title="@string/gesture_setttings_preferenceCategory_onScreen_title" android:key="onScreen">
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_doubleclick_turnonscreen" android:key="toggle_promixy_doubleclick_turnonscreen" android:summary="@string/doubleclick_turnonscreen_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_doubleclick_lockscreen" android:key="toggle_promixy_doubleclick_lockscreen" android:summary="@string/doubleclick_lockscreen_summary" />
+    </com.ape.materialpreference.PreferenceCategory>
+    <com.ape.materialpreference.PreferenceCategory android:title="@string/gesture_setttings_preferenceCategory_offScreen_title" android:key="offScreen">
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_upset_silent" android:key="toggle_upset_silent" android:summary="@string/upset_silent_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_answer_phone" android:key="toggle_promixy_answer_phone" android:summary="@string/answer_phone_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_direct_call" android:key="toggle_promixy_direct_call" android:summary="@string/direct_call_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_handsfree_switch" android:key="toggle_promixy_handsfree_switch" android:summary="@string/handsfree_switch_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_smart_black" android:key="toggle_promixy_smart_black" android:summary="@string/smart_black_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_upset_snooze" android:key="toggle_promixy_upset_snooze" android:summary="@string/upset_snooze_summary" />
+        <com.ape.materialpreference.SwitchPreference android:persistent="true" android:title="@string/gesture_setttings_promixy_powerkey_unlock" android:key="toggle_promixy_powerkey_unlock" android:summary="@string/powerkey_unlock_summary" />
+    </com.ape.materialpreference.PreferenceCategory>
+</PreferenceScreen>

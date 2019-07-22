@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/body" android:paddingTop="@dimen/alert_dialog_padding_top_material" android:paddingBottom="@dimen/alert_dialog_padding_top_material" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:paddingStart="@dimen/alert_dialog_padding_material" android:paddingEnd="@dimen/alert_dialog_padding_material">
+        <com.ape.widget.ProgressWheel android:id="@id/progress" android:layout_width="80.0dip" android:layout_height="80.0dip" android:max="10000" android:layout_marginEnd="@dimen/alert_dialog_padding_material" wheel:matProg_progressIndeterminate="true" wheel:matProg_barColor="@color/accent" style="?android:attr/progressBarStyle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

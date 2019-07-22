@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ff263238" android:layout_width="fill_parent" android:layout_height="@dimen/switchbar_height">
+        <TextView android:textSize="@dimen/switchbar_text_size" android:textColor="@color/switchbar_text_color" android:id="@id/textView_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="60.0dip" />
+        <Switch android:id="@id/switch_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/disable_toast_view" android:background="?android:colorBackground" android:padding="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/getsure_switch_info" android:singleLine="false" />
+        <FrameLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ape.pinnedheaderlistview.PinnedHeaderListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" style="?android:attr/listViewWhiteStyle" />
+            <ProgressBar android:layout_gravity="center" android:id="@android:id/empty" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <com.ape.fab.FloatingActionMenu android:id="@id/menu_add" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:paddingEnd="45.0dip" android:elevation="8.0dip" fab:menu_labels_singleLine="true" fab:menu_labels_ellipsize="end" fab:menu_colorNormal="@color/btn_pop_color" fab:menu_colorPressed="@color/btn_pop_color_pressed" fab:menu_openDirection="up" fab:menu_backgroundColor="#ccffffff">
+            <com.ape.fab.FloatingActionButton android:id="@id/menu_lunch_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_add_lunch_app" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/launchApp" />
+            <com.ape.fab.FloatingActionButton android:id="@id/menu_call_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_add_call_contact" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/callother" />
+            <com.ape.fab.FloatingActionButton android:id="@id/menu_send_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_add_send_message" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/smstoother" />
+            <com.ape.fab.FloatingActionButton android:id="@id/menu_open_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_add_open_bookmark" fab:fab_colorNormal="@color/btn_pop_color" fab:fab_colorPressed="@color/btn_pop_color_pressed" fab:fab_label="@string/open_bookmark" />
+        </com.ape.fab.FloatingActionMenu>
+    </FrameLayout>
+</LinearLayout>
